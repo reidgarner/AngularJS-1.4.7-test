@@ -1,0 +1,21 @@
+<div class="content">
+  <button ng-click="order = 'name'">Order by Name</button>
+  <button ng-click="order = 'color'">Order by Color</button>
+  <input type="text" ng-model="search" placeholder="Search for an animal" />
+  <ul id="animal-list">
+    <li ng-repeat="animal in animals | orderBy: order | filter: search" ng-show="animal.available">
+      <img ng-src="{{animal.thumb}}" alt="{{ animal.name }}" ng-show="animal.thumb"
+        style="margin: -12px 10px 00; float: left; width: 50px; border-radius: 50%;" />
+      <h3>{{ animal.name }} - {{ animal.rate | currency}}</h3>
+      <div class="remove" ng-click="removeAnimal(animal)">x</div>
+      <span class="belt" style="background: {{animal.color}}">{{ animal.color }} animal</span>
+    </li>
+  </ul>
+  <form ng-submit="addAnimal()">
+    <input type="text" ng-model="newAnimal.name" placeholder="Name" />
+    <input type="text" ng-model="newAnimal.color" placeholder="Color" />
+    <input type="text" ng-model="newAnimal.rate" placeholder="Rate" />
+    <input type="submit" value="Add New Animal" />
+  </form>
+  <a href="" ng-click="removeAll()">Remove all animals</a>
+</div>

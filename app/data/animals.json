@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Bear",
+    "color": "Brown",
+    "rate": 500,
+    "available": true,
+    "thumb": "content/bear.jpeg"
+  },
+  {
+    "name": "Lion",
+    "color": "Yellow",
+    "rate": 750,
+    "available": true,
+    "thumb": "content/lion.jpeg"
+  },
+  {
+    "name": "Tiger",
+    "color": "Orange",
+    "rate": 1000,
+    "available": false,
+    "thumb": "content/tiger.jpeg"
+  },
+  {
+    "name": "Shark",
+    "color": "Gray",
+    "rate": 1500,
+    "available": true,
+    "thumb": "content/shark.jpeg"
+  },
+  {
+    "name": "T-rex",
+    "color": "Green",
+    "rate": 2000,
+    "available": true,
+    "thumb": "content/trex.jpeg"
+  }
+]
